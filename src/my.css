@@ -1,0 +1,80 @@
+.top-bar {
+  background-color: #25d4dc;
+  color: white;
+  /* min-height: 40px; */
+}
+.brand-mobile {
+  position: absolute;
+  z-index: 12;
+  top: 5px;
+  border-bottom: 2px solid #25d4dc;
+}
+ul.social-icons {
+  list-style: none;
+}
+ul.social-icons li {
+  display: inline-flex;
+  align-items: center;
+}
+/* Navbar */
+ul.navbar-nav li {
+  font-size: 1.3rem;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+ul.navbar-nav li:hover {
+  border-bottom: 2px solid #25d4dc;
+}
+
+/* Welcome */
+
+.welcome {
+  min-height: 100%;
+  background-color: #25d4dc;
+}
+.welcome button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #23043d;
+}
+
+/* Medias */
+@media (min-width: 1024px) {
+  .top-bar {
+    height: 4vh;
+  }
+  nav.navbar {
+    height: 10vh;
+  }
+  #content {
+    height: 86vh;
+  }
+
+  .welcome h1.frase {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: start;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-bar {
+    height: 10vh;
+  }
+  nav.navbar {
+    min-height: 10vh;
+    margin-top: 10vh;
+  }
+  #content {
+    height: 86vh;
+    background-color: aqua;
+  }
+
+  .welcome h1.frase {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    width: 75%;
+  }
+}
